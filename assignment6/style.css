@@ -1,7 +1,12 @@
 /* css */
 
+canvas { 
+    margin: 0 auto;
+    display: block;
+}
+
 #home {
-    background-color:tan;
+    background-color:coral;
     font-family:sans-serif;
 }
 ul {
@@ -59,5 +64,26 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+ {
+    margin: 0px;
+    padding: 0px;
+}
+
+.div_mit_background {
+    margin-right: auto;
+    margin-left: auto;
+    
+    width: 1200px;
+    
+    background-image: url("http://www.qygjxz.com/data/out/63/4736503-deadmau5-wallpaper.png");
+    height: 200px;
+}
+
+p{
+    margin-left: 64px;
+    color: white;
+    padding-top: 20px;
 }
 
