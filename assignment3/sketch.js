@@ -1,36 +1,38 @@
-var leafh = 70;
-var leafw = 70;
+var x = 10;
+var y = 10;
+var xSpeed = 2;
+var ySpeed = 2;
 var r = 255; g= 255; b = 255;
 function setup() { 
-createCanvas (840, 420); 
+    createCanvas (640, 360);
+    background(100);
+    fill(255);
+    //noStroke();
 } 
   
 function draw() { 
-      
-    background("lightblue"); 
+    //background(100);
+    var sz = random(40, 60);
+    ellipse(x, y, 100);
     
-    //floor
-    rect(0, 400, 840, 30);
+    var r = random(0,255);
+    var g = random(0,255);
+    var b = random(0,255);
+    fill(r, g, b);
     
-    //treeleafs
-    ellipse(70, 300, leafw, leafh);
-    ellipse(100, 250, leafw, leafh);
-    ellipse(130, 300, leafw, leafh);
-     
-    //treebase
-    rect(95, 220, 10, 400);
+    var r = random(1, 10);
     
-    //house
-    fill(5, 89, 200);
-    rect(170, 200, 250, 300);
+    x += xSpeed;
+    y += ySpeed;
+    if (x > width || x < 0) {
+        xSpeed *= -1;
+        
+    }
+      if(y > height || x < 0){
+          ySpeed *= -1;
+      }
     
-    //housemill
-    rect(420, 100, 100, 300);
-    
-    
-    
-    
-    
-     
-     
-}
+} 
+  
+ 
+

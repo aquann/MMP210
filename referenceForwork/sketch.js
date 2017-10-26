@@ -25,37 +25,64 @@ function draw() {
     fill("brown");
     rect(95, 318, 10, 83);
     
+    
+    
     //house
     stroke(0);
-    fill("tan");
+    fill("yellow");
     rect(170, 200, 250, 200);
     
+    //houseRoofmarker
+    ellipse(170, 200, 10);
+    ellipse(170+250, 200, 10);
+    ellipse(170+126, 100, 10);
+    
     //houseRoof
-    fill("brown");
     triangle(170, 200,170+250, 200,170+126, 100);
     
+    
     //houseWindow
-    fill("lightblue");
+    fill("brown");
     rect(330, 260, 60, 60);
-    line(360, 260, 360, 320);
-    line(330, 290, 390, 290);
+    
+    //doorLinemarker
+    fill("black");
+    ellipse(255, 298, 10);
+    ellipse(255, 400, 10);
+    ellipse(230, 350, 10);
+    ellipse(280, 350, 10);
     
     
     //houseDoor
     fill("red");
     rect(230, 300, 50, 100);
     fill("black");
-    line(255, 300, 255, 400);
+    line(255, 298, 255, 400);
     line(230, 350, 280, 350);
-    ellipse(277, 350, 7);
     
     //houseMill
-    fill("lightgrey");
+    fill("yellow");
     rect(420, 100, 100, 300);
+    
+    //houseMillmarker
+    ellipse(420,100,10);
+    ellipse(520,100,10);
+    ellipse(470, 50,10);
     
     //millRoof
     triangle(420, 100, 520, 100, 470, 50);
     
     
+    
+    
+    //outHouse
+    fill(yellow);
+    rect(600, 320, 70, 80);
+    
+    
+    
+    
+    
+     
      
 }
