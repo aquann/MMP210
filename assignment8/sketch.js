@@ -8,12 +8,13 @@ function design() {
     var originX = random(-width/2, width/2);
     translate(width/2, height/2);
     var numArcs = 10;
+    var random = 1;
     
     for (var i = 0; i < numArcs; i++){
         var r = random(127, 255);
         var g = random(127, 255);
         var b = random(127, 255);
-        if(random(0,1) > (0.5);
+        if(random(0,1) > (0.5)
         var r = random(127, 0);
         var g = random(127, 0);
         var b = random(127, 0);

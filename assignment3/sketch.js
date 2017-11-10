@@ -1,38 +1,49 @@
-var x = 10;
-var y = 10;
-var xSpeed = 2;
-var ySpeed = 2;
-var r = 255; g= 255; b = 255;
-function setup() { 
-    createCanvas (640, 360);
-    background(100);
-    fill(255);
-    //noStroke();
-} 
-  
-function draw() { 
-    //background(100);
-    var sz = random(40, 60);
-    ellipse(x, y, 100);
-    
-    var r = random(0,255);
-    var g = random(0,255);
-    var b = random(0,255);
-    fill(r, g, b);
-    
-    var r = random(1, 10);
-    
-    x += xSpeed;
-    y += ySpeed;
-    if (x > width || x < 0) {
-        xSpeed *= -1;
-        
-    }
-      if(y > height || x < 0){
-          ySpeed *= -1;
-      }
-    
-} 
-  
- 
 
+function setup() {
+	createCanvas(640, 480);
+//    background("black");
+    
+}
+
+function draw(){
+    var str1 = "Alexander"; 
+    
+    //horizontal rect
+    var rectW = 435;
+    var rectH = 115;
+    
+    //vertical rect
+    var rect2W = 110;
+    var rect2H = 400;
+    
+    //hidden
+    var rect3W = 105;
+    var rect3H = 395; 
+    
+    var centerW = width/2;
+    var centerY = height/2;
+    
+    
+    rectMode(CENTER);
+    stroke("red");
+    rect(centerW, centerY, 110, 400);
+    
+    fill("black");
+    //noStroke();
+    rectMode(CENTER);
+    rect(centerW, centerY - 23, rectW, rectH);
+    
+    noStroke();
+    rect(centerW, centerY, rect3W, rect3H);
+    
+    fill("red");
+    strokeWeight(3);
+    textSize(80);
+    textFont("cursive");
+    textStyle("italic")
+    text(str1, width/2 - 190, height/2);
+    fill("black");
+    text(str1, width/2 - 186, height/2);
+    
+    
+}

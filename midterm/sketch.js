@@ -45,7 +45,6 @@ function design() {
             else {
                 arc(x, y, w*2, h*2, 0, HALF_PI);   
             }
-            
     
             
 		}

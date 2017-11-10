@@ -4,6 +4,8 @@ var windh;
 
 function setup() {
 	createCanvas(640, 360);
+    
+    //drawWindow((x , windw, x),( X, 50, 100 , 150));
 }
 
 function draw() {
@@ -12,9 +14,10 @@ function draw() {
     windh = 50;
 
     background("maroon");
-    let space = 150;
+      space = 150;
     for (let x = 50; x <= width; x += space) {
     
+     
         //windowframe
         stroke("black");
         fill("black");
@@ -52,8 +55,12 @@ function draw() {
         }
     }
     
+}
+
+function drawWindow(x,y,w,h) {
     
     
+}
    
     
 //    ellipse(50, 45, 5, 10);
@@ -83,4 +90,4 @@ function draw() {
 
     
     
-}
+

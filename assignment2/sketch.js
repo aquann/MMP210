@@ -1,17 +1,32 @@
-var leafh = 70;
-var leafw = 70;
+
 var r = 255; g= 255; b = 255;
 function setup() { 
 createCanvas (840, 420); 
 } 
   
 function draw() { 
+    var rectFlX = 0;
+    var rectFlY = 400;
+    var rectFlW = 840;
+    var rectFlH = 30;
+    
+//    var leafX = ;
+//    var leafY = ;
+    var leafh = 70;
+    var leafw = 70;
+//    var rectFl = ;
+//    var rectFl = ;
+//    var rectFl = ;
+//    var rectFl = ;
+//    var rectFl = ;
+//    var rectFl = ;
+//    var rectFl = ;
       
     background("lightblue"); 
     
     //floor
     fill("grey");
-    rect(0, 400, 840, 30);
+    rect(rectFlX, rectFlY, rectFlW, rectFlH);
     
     //treeLeafs
     noStroke();
