@@ -9,18 +9,8 @@ function draw() {
     var rectFlY = 400;
     var rectFlW = 840;
     var rectFlH = 30;
-    
-//    var leafX = ;
-//    var leafY = ;
     var leafh = 70;
     var leafw = 70;
-//    var rectFl = ;
-//    var rectFl = ;
-//    var rectFl = ;
-//    var rectFl = ;
-//    var rectFl = ;
-//    var rectFl = ;
-//    var rectFl = ;
       
     background("lightblue"); 
     
@@ -70,7 +60,5 @@ function draw() {
     
     //millRoof
     triangle(420, 100, 520, 100, 470, 50);
-    
-    
-     
+   
 }

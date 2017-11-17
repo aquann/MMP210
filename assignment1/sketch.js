@@ -6,8 +6,6 @@ createCanvas (640 , 360);
   
 function draw() { 
       
-
-     
    faceWidth = 150;
     
     ellipse();
