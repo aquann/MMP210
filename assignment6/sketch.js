@@ -1,33 +1,41 @@
-var sz = 200;
+var sz = 70;
 var x = 0;
 function setup() {
-	createCanvas(640, 360);
+	createCanvas(800, 800);
     fill(255);
     rectMode(CENTER);
     
   noStroke();
-    textSize(50);
-    textFont("Comic Sans MS");
+    textSize(60);
+    textFont("san serif");
+   
 }
 
 function draw() {
-    background(220, 20);
-    fill(255);
+    background("black");
+    fill("black");
     push();
-    translate(width/4,height/2);
-    rotate(frameCount * PI / 100);
-    rect(x, 0, sz, sz);
+    translate(width/2,height/2);
+    rotate(frameCount * - PI / 100);
+    text("Quann", 30, 50);
     pop();
     
      push();
-    translate(width/3/4,height/2);
+    fill("maroon");
+    translate(width/2,height/2);
     rotate(frameCount * PI / 100);
-    rect(x, 0, sz, sz);
+    ellipse(x, 0, sz, sz);
     pop();
     
     fill(0, 255, 255);
-    translate(width/4,height/2);
+    translate(width/2,height/2);
     rotate(frameCount * PI / 100);
+    
+    strokeWeight(4);
+    stroke("purple");
+    fill("red");
+    text("Alexander", 20, 50);
+    
 
     
 }
