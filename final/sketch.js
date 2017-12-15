@@ -146,9 +146,7 @@ function setup() {
     
 }
 
-function draw(){
-    background("maroon");
-    
+function draw(){    
     //THIS IS SAMPLE SET
     
     //Instructions
